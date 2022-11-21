@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="ar">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Grand Cinema</title>
+</head>
+<body>
+
+  <!-- Navbar Section -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-secondary " id="navbar">
+        <a class="navbar-brand" href="#">
+          <img src="images/cinema_logo.webp" alt="Logo Picture" width="40px" height="40px" style="border-radius: 50%;">
+        </a>
+        <a class="navbar-brand navbar-brand1 mx-1 text-white font-weight-bold pr-2" style="border-right: 1px solid rgb(216, 215, 215) ;" href="#">جراند سينما</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white pl-3" href="#">الصفحة الرئيسية <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">مميزاتنا</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                التصنيفات
+              </a>
+              <div class="dropdown-menu text-white" style="background-color: rgba(255, 255, 255, 0.842);">
+                <a class="dropdown-item " href="#">أفلام</a>
+                <a class="dropdown-item" href="#">مسلسلات</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">وثائقي</a>
+                <a class="dropdown-item" href="#">مسرحيات</a>
+                <a class="dropdown-item" href="#">أنمي</a>
+                <a class="dropdown-item" href="#">رياضة</a>
+                <a class="dropdown-item" href="#">موسيقى</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">العروض المتاحة</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="بحث" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">بحث</button>
+            <button class="btn btn-outline-light my-2 mx-2 my-sm-0" type="submit">حجز تذكرة</button>
+          </form>
+        </div>
+      </nav>
+      
+      <!-- End Navbar Section -->
+
+      <!-- Strat Slider -->
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/films.webp" class="d-block w-100" height="600px" alt="html">
+            <div class="carousel-caption" style="background-color: rgba(150, 150, 150, 0.34);">
+              <h5>أفلام</h5>
+              <a href="#" target="_blank">
+                <button type="button" class="btn btn-danger mt-2">تعرف على المزيد</button>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/series.gif" class="d-block w-100" height="600px" alt="css">
+            <div class="carousel-caption" style="background-color: rgba(150, 150, 150, 0.34);">
+              <h5>مسلسلات</h5>
+              <button type="button" class="btn btn-info mt-2">تعرف على المزيد</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/انمي.gif" class="d-block w-100" height="600px" alt="js">
+            <div class="carousel-caption " style="background-color: rgba(150, 150, 150, 0.34);">
+              <h5>أنمي</h5>
+              <button type="button" class="btn btn-success mt-2">تعرف على المزيد</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/decoument1.gif" class="d-block w-100" height="600px" alt="json">
+            <div class="carousel-caption" style="background-color: rgba(150, 150, 150, 0.34);">
+              <h5>وثائقي</h5>
+              <button type="button" class="btn btn-secondary mt-2">تعرف على المزيد</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+
+      <!-- End Slider -->
+
+      <!-- start Section -->
+      <div class="bg-dark text-white text-center py-5 px-5 rounded-bottom">
+        <h1>مرحبا بكم في جراند سينما</h1>
+        <p>نقدم في السينما العروض الأعلى تصنيفا للتأكد من استمتاع الحضور و نحرص على تقديم كافة الخدمات</p>
+        <p>نوفر التصنيفات الأكثر تشويقا في جراند سينما و هي: الاكشن و الكوميدي و الغموض</p>
+        <a href="#">
+          <button type="button" class="btn btn-info mt-2">إعرف أكثر </button>
+        </a>
+      </div>
+      <!-- End Section -->
+
+      <!-- Start Section -->
+      <div class="bg-secondary text-white text-center" style="height:120px ; margin-top: -20px;">
+        <hr style="background-color: rgb(114, 109, 109);">
+        <h2 class="border-dark border-top py-5 font-weight-bold" >لماذا نحن أفضل خيار؟</h2>
+      </div>
+
+      <!-- End Section -->
+
+      <!-- Start Collapse Buttons -->
+
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">     
+                    <span class="title">دعم فني</span>
+                    <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                    <div class="card-body">
+                      دعم فني على مدار الساعة لحل اي مشكلة
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">     
+                    <span class="title">الخدمات</span>
+                    <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                      نوفر جميع الخدمات للتأكد من راحة الحضور
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+                    <span class="title">الراحة</span>
+                    <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                      نتأكد من توفير مقعد مريح و كل خدمات الراحة للتأكد من راحة العميل التامة اثناء مشاهدة العرض المقدم
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
+                    <span class="title">الجودة </span>
+                    <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                      يتم عرض الفيلم على اعلى مستوى من الجودة
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+      <!-- End Collapse Buttons -->
+
+      <!-- Start Section -->
+      <div class="bg-secondary text-white text-center" style="height:160px ; margin-top: -20px;">
+        <hr style="background-color: rgb(114, 109, 109);">
+        <h2 class="border-dark border-top py-5 font-weight-bold ">  : العروض المتاحة  <br>الأكشن </h2>
+      </div>
+      <!-- End Section -->
+
+      <!-- start Section -->
+      <div class="bg-dark text-white text-center py-5 px-5 rounded-bottom">
+        <h4>نوفر الكثير من العروض الأكشن المثيرة للإهتمام <a href="#">لمعرفة المزيد اضغط هنا</a></h4>
+        <a href="#">
+          <button type="button" class="btn btn-outline-light">حجز تذكرة</button>
+        </a>
+      </div>
+      <!-- End Section -->
+
+      <!-- Start Section -->
+      <div class="bg-secondary text-white text-center" style="height:120px ; margin-top: -20px;">
+        <hr style="background-color: rgb(114, 109, 109);">
+        <h2 class="border-dark border-top py-5 font-weight-bold" >كوميدي</h2>
+      </div>
+
+      <!-- End Section -->
+
+      <!-- start Section -->
+      <div class="bg-dark text-white text-center py-5 px-5 rounded-bottom">
+        <h4>نوفر الكثير من العروض الكوميدية المثيرة للإهتمام <a href="#">لمعرفة المزيد اضغط هنا</a></h4>
+        <a href="#">
+          <button type="button" class="btn btn-outline-light">حجز تذكرة</button>
+        </a>
+      </div>
+      <!-- End Section -->
+
+      <!-- Start Section -->
+      <div class="bg-secondary text-white text-center" style="height:120px ; margin-top: -20px;">
+        <hr style="background-color: rgb(114, 109, 109);">
+        <h2 class="border-dark border-top py-5 font-weight-bold" >الغموض</h2>
+      </div>
+
+      <!-- End Section -->
+
+      <!-- start Section -->
+      <div class="bg-dark text-white text-center py-5 px-5 rounded-bottom">
+        <h4>نوفر الكثير من العروض الغامضة المثيرة للإهتمام <a href="#">لمعرفة المزيد اضغط هنا</a></h4>
+        <a href="#">
+          <button type="button" class="btn btn-outline-light">حجز تذكرة</button>
+        </a>
+      </div>
+      <!-- End Section -->
+
+      <!-- Start Section -->
+      <div class="background1"></div>
+      <!-- End Section -->
+
+      <!-- Start Basic -->
+      <div class="bg-secondary text-white text-center" style="height:120px ; margin-top: -20px; ">
+        <h2 class="border-dark border-top py-5 font-weight-bold">: بعض أسماء العروض المقدمة  </h2>
+      </div>
+
+      <div class="container-fluid bg-secondary">
+        <div class="row justify-content-around pb-5 " style="border-radius: 5px;">
+          <!-- <div class="col-lg-3 col-md-4 col-sm-6 m-1 mt-5"> -->
+            <div class="card bg-dark text-white col-lg-3 col-md-4 col-sm-6 col-xs-12 m-1 mt-5" style="width: 18rem;  height: 400px;">
+              <img src="images/the gray man.jpg" class="card-img-top" alt="html" height="230px">
+              <div class="card-body">
+                <h5 class="card-title">The Gray Man</h5>
+                <p class="card-text">Ryan Gosling & Chris Evans</p>
+                <a href="#" class="btn btn-primary">More Details</a>
+              </div>
+            </div> <!-- card -->
+          <!-- </div> -->
+          <!-- <div class="col-lg-3 col-md-4 col-sm-6 m-1 mt-5"> -->
+            <div class="card bg-dark text-white col-lg-3 col-md-4 col-sm-6 col-xs-12 m-1 mt-5" style="width: 18rem;  height: 400px;">
+              <img src="images/Carter.webp" class="card-img-top" alt="css" height="230px">
+              <div class="card-body">
+                <h5 class="card-title">Carter</h5>
+                <p class="card-text">Joo Woo</p>
+                <a href="#" class="btn btn-primary">More Details</a>
+              </div>
+            </div> <!-- card -->
+          <!-- </div> -->
+          <!-- <div class="col-lg-3 col-md-4 col-sm-6 m-1 mt-5"> -->
+            <div class="card bg-dark text-white col-lg-3 col-md-4 col-sm-6 col-xs-12 m-1 mt-5" style="width: 18rem; height: 400px;">
+              <img src="images/squid game.jpg" class="card-img-top" alt="js" height="230px">
+              <div class="card-body">
+                <h5 class="card-title">Squid Game</h5>
+                <p class="card-text">Lee Jung-jae</p>
+                <a href="#" class="btn btn-primary">More Details</a>
+              </div>
+            </div> <!-- card -->
+          <!-- </div> -->
+          <!-- <div class="col-lg-3 col-md-4 col-sm-6 m-1 mt-5"> -->
+            <div class="card bg-dark text-white col-lg col-md-4 col-sm-6 col-xs-12 m-1 mt-5 mr-1" style="width: 18rem; height: 400px;">
+              <img src="images/the witcher.jpg" class="card-img-top" alt="java" height="230px">
+              <div class="card-body">
+                <h5 class="card-title">The Witcher</h5>
+                <p class="card-text">Henry Cavill</p>
+                <a href="#" class="btn btn-primary">More Details</a>
+              </div>
+            </div> <!-- card -->
+
+            <div class="card bg-dark text-white col-lg-3 col-md-4 col-sm-6 col-xs-12 m-1 mt-5" style="width: 18rem; height: 400px;">
+              <img src="images/Attack on Titan.jpg" class="card-img-top" alt="Python" height="230px">
+              <div class="card-body">
+                <h5 class="card-title">Attack on Titan</h5>
+                <p class="card-text">Bryce Papenbrook</p>
+                <a href="#" class="btn btn-primary">More Details</a>
+              </div>
+            </div> <!-- card -->
+            <div class="card bg-dark text-white col-lg-3 col-md-4 col-sm-6 col-xs-12 m-1 mt-5" style="width: 18rem; height: 400px;">
+              <img src="images/Fantastic Fungi.jpg" class="card-img-top" alt="Bootstrap" height="230px">
+              <div class="card-body">
+                <h5 class="card-title">Fantastic Fungi</h5>
+                <p class="card-text">Paul Stamets</p>
+                <a href="#" class="btn btn-primary">More Details</a>
+              </div>
+            </div> <!-- card -->
+            <div class="card bg-dark text-white col-lg-3 col-md-4 col-sm-6 col-xs-12 m-1 mt-5" style="width: 18rem; height: 400px;">
+              <img src="images/Our Town.jpg" class="card-img-top" alt="Json" height="230px">
+              <div class="card-body">
+                <h5 class="card-title">Our Town</h5>
+                <p class="card-text">William Holden</p>
+                <a href="#" class="btn btn-primary">More Details</a>
+              </div>
+            </div> <!-- card -->
+          <!-- </div> col -->
+        </div>
+      </div>
+
+      <!-- End Card -->
+
+      <!-- Background2 -->
+      <!-- Start Section -->
+      <div class="background2"></div>
+      <!-- End Section -->
+      
+      <!-- Thanks For Section -->
+      <div class="bg-secondary text-white text-center pb-5" style=" margin-top: -20px;">
+        <hr style="background-color: rgb(114, 109, 109);">
+        <h2 class="border-dark border-top py-5 font-weight-bold" >Thanks For</h2>
+
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="card bg-dark text-white p-3 m-3 mt-5" style="width: 18rem; height: 300px;">
+            <img src="images/manager1.jpg" class="card-img-top" alt="Noah" height="200px">
+            <div class="card-body">
+              <p class="card-text">Noah</p>
+            </div>
+          </div> <!-- end card -->
+          <div class="card bg-dark text-white p-3 m-3 mt-5" style="width: 18rem; height: 300px;">
+            <img src="images/manager2.jpg" class="card-img-top" alt="Malik" height="200px">
+            <div class="card-body">
+              <p class="card-text">Malik</p>
+            </div>
+          </div> <!-- end card -->
+          <div class="card bg-dark text-white p-3 m-3 mt-5" style="width: 18rem; height: 300px;">
+            <img src="images/manager3.jpg" class="card-img-top" alt="Sophia" height="200px">
+            <div class="card-body">
+              <p class="card-text">Sophia</p>
+            </div>
+          </div> <!-- end card -->
+        </div>
+      </div>
+
+      <!-- join us -->
+      <!-- <hr style="background-color: rgb(114, 109, 109);"> -->
+      <h2 class="border-dark border-top py-5 font-weight-bold" >Join Us</h2>
+      <div class="container-fluid">
+        <div class="row justify-content-center mt-3">
+          <div class="card bg-dark text-white text-center col-lg-3 m-1 " style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Subscribe Now</h5>
+              <i class="fab fa-facebook" style="color: rgb(89, 89, 226);"></i> <br>
+              <a href="#" target="_blank" class="card-link go_link">Go To Link</a>
+            </div> <!-- card-body -->
+          </div> <!-- card -->
+          <div class="card bg-dark text-white text-center col-lg-3 m-1" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Follow</h5>
+              <i class="fab fa-facebook" style="color: rgb(89, 89, 226);"></i> <br>
+              <a href="#" target="_blank" class="card-link go_link">Go To Link</a>
+            </div> <!-- card-body -->
+          </div> <!-- card -->
+          <div class="card bg-dark text-white text-center col-lg-3 m-1" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Like the page</h5>
+              <i class="fab fa-facebook" style="color: rgb(89, 89, 226);"></i> <br>
+              <a href="#" target="_blank" class="card-link go_link">Go To Link</a>
+            </div> <!-- card-body -->
+          </div> <!-- card -->
+          <div class="card bg-dark text-white text-center col-lg m-1" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">watch vedios</h5>
+              <i class="fab fa-facebook" style="color: rgb(89, 89, 226);"></i> <br>
+              <a href="#" target="_blank" class="card-link go_link">Go To Link</a>
+            </div> <!-- card-body -->
+          </div> <!-- card -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </div> <!-- Thanks For -->
+      
+
+    <!-- Start Footer -->
+    <div class="bg-dark text-white text-center pt-5 pb-5">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="heading border-top border-bottom py-3" style="border-color: #fff;">
+              <i class="fab fa-facebook ml-2" style="color: rgb(89, 89, 226);"></i>
+              <span class="h4">Good Company</span>
+            </div>
+            <ul style="list-style: none;" class="mt-3">
+              <li>Tel : 000-000-000</li>
+              <li class="my-3">Address : EGYPT</li>
+              <li>Fax : 000-000-000</li>
+            </ul>
+          </div> <!-- col -->
+    
+          <div class="col-lg-4">
+            <div class="heading border-top border-bottom py-3" style="border-color: #fff;">
+              <i class="fab fa-facebook ml-2" style="color: rgb(89, 89, 226);"></i>
+              <span class="h4">Important links</span>
+            </div>
+            <ul style="list-style: none;" class="mt-3 contact">
+              <li><a href="#" >Visit Us</a></li>
+              <li class="my-3"><a href="#">Take alook</a></li>
+              <li><a href="#">Your health is more important</a></li>
+            </ul>
+          </div> <!-- col -->
+
+          <div class="col-lg">
+            <div class="heading border-top border-bottom py-3" style="border-color: #fff;">
+              <i class="fab fa-facebook ml-2" style="color: rgb(89, 89, 226);"></i>
+              <span class="h4">Vision</span>
+            </div>
+            <ul style="list-style: none;" class="mt-3">
+              <li>Serveices for all</li>
+              <li class="my-3">Provide best serveices</li>
+              <li>you will be better than before</li>
+            </ul>
+          </div> <!-- col -->
+        </div>
+      </div> <!-- container -->
+
+      <hr style="color: rgb(212, 212, 212);">
+      <h6 class="py-3 text-secondary">Copyright &copy; 2022 Grand Cinema , Good Company. All rights</h6>
+      <hr style="color: rgb(207, 206, 206);">
+    </div>
+
+    <!-- End Footer -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
